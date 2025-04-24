@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hud {
+    position: absolute;
+    bottom: 1.8vw;
+    left: 16.3vw;
+    display: flex;
+    flex-direction: row; /* <-- war vorher column */
+    gap: 10px;
+}
+
+.status-container, .status-container2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle {
+    transform: rotate(-90deg);
+}
+
+.progress-hunger {
+    filter: drop-shadow(0 0 2px #00ff88);
+}
+
+.progress-thirst {
+    filter: drop-shadow(0 0 2px #00cfff);
+}
